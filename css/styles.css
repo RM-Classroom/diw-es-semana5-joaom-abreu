@@ -4,102 +4,149 @@ body {
     font-family: 'Georgia', serif;
     background-color: #f4efe6;
     color: #333;
-    min-width: 320px;
 }
 
 header {
     background-color: #2b3a2a;
     color: #f4efe6;
-    padding: 20px 2%;
-    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 5%;
 }
 
 header .logo {
     font-size: 24px;
     font-weight: bold;
-    float: left;
-    width: 20%;
 }
 
 .menu-navegacao {
-    float: left;
-    width: 60%;
-    text-align: center;
+    display: flex;
+    gap: 20px;
 }
 
 .menu-navegacao a {
     color: #f4efe6;
     text-decoration: none;
-    margin: 0 10px;
-    display: inline-block;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+.menu-navegacao a:hover {
+    color: #d4af37;
 }
 
 .link-login {
-    float: right;
-    width: 15%;
-    text-align: right;
     color: #f4efe6;
+    text-decoration: underline;
+    font-size: 16px;
+    font-weight: bold;
 }
 
 .secao-principal {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     background-color: #4a3b32;
     color: #f4efe6;
     padding: 40px 5%;
-    overflow: hidden;
+    gap: 30px;
 }
 
 .imagem-principal {
-    float: left;
     width: 45%;
     border-radius: 10px;
+    object-fit: cover;
+    max-height: 300px;
+    box-shadow: 0px 4px 8px rgba(0,0,0,0.3);
 }
 
 .texto-introdutorio {
-    float: right;
     width: 50%;
 }
 
+.texto-introdutorio h1 {
+    margin-top: 0;
+    font-size: 2.2rem;
+}
+
+.texto-introdutorio p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
 .container {
-    width: 95%;
+    width: 90%;
+    max-width: 1100px;
     margin: 0 auto;
-    padding: 40px 0;
+    padding-top: 40px;
+    padding-bottom: 40px;
 }
 
 .titulo-secao {
     color: #2b3a2a;
+    margin-bottom: 30px;
     text-align: center;
-    clear: both;
 }
 
 .lista-autores {
-    text-align: center;
-    font-size: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
 }
 
 .cartao-autor {
     background-color: #ffffff;
-    width: 22%;
-    min-width: 200px;
-    margin: 10px 1%;
-    display: inline-block;
-    vertical-align: top;
-    font-size: 16px;
-    border: 1px solid #e0dcd3;
-    padding-bottom: 20px;
+    width: 230px;
     text-align: center;
+    padding-bottom: 20px;
+    box-shadow: 0px 4px 10px rgba(0,0,0,0.08); 
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border: 1px solid #e0dcd3;
 }
 
 .foto-autor {
-    width: 100%;
     height: 150px;
+    width: 100%;
+    object-fit: cover;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    filter: sepia(20%);
+}
+
+.nome-autor {
+    margin: 15px 10px 5px 10px;
+    font-size: 18px;
+    color: #4a3b32;
+}
+
+.desc-autor {
+    margin: 0 15px 20px 15px;
+    font-size: 14px;
+    color: #666;
+    flex-grow: 1;
 }
 
 .botao-obras {
     background-color: #2b3a2a;
     color: #f4efe6;
     border: none;
-    padding: 10px 20px;
+    padding: 10px 0;
+    width: 80%;
+    margin: 0 auto;
+    font-weight: bold;
+    font-size: 14px;
+    border-radius: 4px;
     cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.botao-obras:hover {
+    background-color: #1e291d;
 }
 
 footer {
@@ -107,11 +154,45 @@ footer {
     color: #f4efe6;
     text-align: center;
     padding: 20px;
-    clear: both;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
 }
 
 footer .redes-sociais a {
     color: #d4af37;
     text-decoration: none;
-    padding: 0 10px;
+    margin: 0 10px;
+}
+
+footer .redes-sociais a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        gap: 15px;
+        text-align: center;
+    }
+
+    .menu-navegacao {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .secao-principal {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .imagem-principal, .texto-introdutorio {
+        width: 100%;
+    }
+
+    .cartao-autor {
+        width: 100%;
+        max-width: 350px;
+    }
 }
