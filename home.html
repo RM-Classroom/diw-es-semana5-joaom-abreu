@@ -2,96 +2,107 @@
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Acervo Biblioteca">
     <meta name="author" content="João Abreu">
     <link rel="stylesheet" href="css/styles.css">
-    <title>Acervo</title>
+    <title>Acervo da Biblioteca</title>
 </head>
 <body>
 
     <header>
         <div class="logo">Biblioteca</div>
-        <form class="busca">
-            <input type="text" placeholder="Busca de livros ou autores">
-        </form>
+        <nav class="menu-navegacao">
+            <a href="#">Início</a>
+            <a href="#">Autores</a>
+            <a href="#">Categorias</a>
+            <a href="#">Sobre Nós</a>
+        </nav>
         <a href="#" class="link-login">Login</a>
     </header>
 
-    <div class="faixa-azul">
-        <h1>Nosso acervo de autores</h1>
-    </div>
+    <main class="secao-principal">
+        <img src="img/biblioteca-principal.jpg" class="imagem-principal">
+        <div class="texto-introdutorio">
+            <h1>Bem-vindo ao Nosso Acervo Literário</h1>
+            <p>Explore nossa vasta coleção de livros. Nosso acervo digital permite que você conheça os maiores autores da história e encontre as obras disponíveis em nossas estantes para a sua próxima leitura.</p>
+        </div>
+    </main>
 
-    <main class="container">
+    <section class="container sec-autores">
         <h2 class="titulo-secao">Autores Cadastrados</h2>
 
         <div class="lista-autores">
             
             <article class="cartao-autor">
-                <figure>
-                    <img src="img\dumas.jpg" class="foto-autor">
-                    <figcaption>Alexandre Dumas</figcaption>
-                </figure>
+                <img src="img/dumas.jpg" class="foto-autor">
+                <h3 class="nome-autor">Alexandre Dumas</h3>
+                <p class="desc-autor">Mestre dos romances históricos e aventuras clássicas.</p>
                 <button class="botao-obras">Ver Obras</button>
             </article>
 
             <article class="cartao-autor">
-                <figure>
-                    <img src="img/kant.jpg" class="foto-autor">
-                    <figcaption>Immanuel Kant</figcaption>
-                </figure>
+                <img src="img/kant.jpg" class="foto-autor">
+                <h3 class="nome-autor">Immanuel Kant</h3>
+                <p class="desc-autor">Filósofo prussiano, central na filosofia moderna.</p>
                 <button class="botao-obras">Ver Obras</button>
             </article>
 
             <article class="cartao-autor">
-                <figure>
-                    <img src="img/kdick.jpg" class="foto-autor">
-                    <figcaption>Philip K. Dick</figcaption>
-                </figure>
+                <img src="img/kdick.jpg" class="foto-autor">
+                <h3 class="nome-autor">Philip K. Dick</h3>
+                <p class="desc-autor">Renomado autor de ficção científica e distopias.</p>
                 <button class="botao-obras">Ver Obras</button>
             </article>
 
             <article class="cartao-autor">
-                <figure>
-                    <img src="img/lispector.jpg" class="foto-autor">
-                    <figcaption>Clarice Lispector</figcaption>
-                </figure>
+                <img src="img/lispector.jpg" class="foto-autor">
+                <h3 class="nome-autor">Clarice Lispector</h3>
+                <p class="desc-autor">Uma das maiores escritoras brasileiras do século XX.</p>
                 <button class="botao-obras">Ver Obras</button>
             </article>
 
             <article class="cartao-autor">
-                <figure>
-                    <img src="img/machado.jpg" class="foto-autor">
-                    <figcaption>Machado de Assis</figcaption>
-                </figure>
+                <img src="img/machado.jpg" class="foto-autor">
+                <h3 class="nome-autor">Machado de Assis</h3>
+                <p class="desc-autor">Fundador da Academia Brasileira de Letras.</p>
                 <button class="botao-obras">Ver Obras</button>
             </article>
 
             <article class="cartao-autor">
-                <figure>
-                    <img src="img/nietzsche.jpg" class="foto-autor">
-                    <figcaption>Friedrich Nietzsche</figcaption>
-                </figure>
+                <img src="img/nietzsche.jpg" class="foto-autor">
+                <h3 class="nome-autor">Friedrich Nietzsche</h3>
+                <p class="desc-autor">Filósofo alemão conhecido por suas críticas culturais.</p>
                 <button class="botao-obras">Ver Obras</button>
             </article>
 
             <article class="cartao-autor">
-                <figure>
-                    <img src="img/orwell.jpg" class="foto-autor">
-                    <figcaption>George Orwell</figcaption>
-                </figure>
+                <img src="img/orwell.jpg" class="foto-autor">
+                <h3 class="nome-autor">George Orwell</h3>
+                <p class="desc-autor">Autor de aclamadas críticas sociais e distopias políticas.</p>
                 <button class="botao-obras">Ver Obras</button>
             </article>
 
             <article class="cartao-autor">
-                <figure>
-                    <img src="img/tolkien.jpg" class="foto-autor">
-                    <figcaption>J. R. R. Tolkien</figcaption>
-                </figure>
+                <img src="img/tolkien.jpg" class="foto-autor">
+                <h3 class="nome-autor">J. R. R. Tolkien</h3>
+                <p class="desc-autor">O grande criador de mundos da alta fantasia.</p>
                 <button class="botao-obras">Ver Obras</button>
             </article>
 
         </div>
-    </main>
+    </section>
+
+    <footer>
+        <div class="info-institucional">
+            <p>&copy; 2026 Biblioteca Acervo. Todos os direitos reservados.</p>
+        </div>
+        <div class="redes-sociais">
+            <a href="#">Instagram</a> | 
+            <a href="#">Facebook</a> | 
+            <a href="#">Twitter</a>
+        </div>
+    </footer>
 
 </body>
 </html>
